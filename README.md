@@ -5,7 +5,7 @@ Bu proje, Titanic faciası sırasında yolcuların hayatta kalıp kalamayacağı
 ## Veri Seti
 
 Kaynak: https://www.kaggle.com/competitions/titanic  
-Kullanılan dosyalar: train.csv, test.csv
+Kullanılan dosyalar: train.csv
 
 ## Proje Aşamaları
 
@@ -23,8 +23,8 @@ Kullanılan dosyalar: train.csv, test.csv
    Sayısal veriler uygun şekilde ölçeklendirildi.
 
 4. Modelleme (Model Training and Selection)  
-   Logistic Regression, Random Forest, XGBoost gibi algoritmalar denendi.  
-   Eğitim ve test ayrımı yapılara performans ölçüldü.
+   Logistic Regression, Random Forest denendi.  
+   Eğitim ve test ayrımı yapılarak performans ölçüldü.
 
 5. Model Değerlendirme (Model Evaluation)  
    Accuracy, ROC AUC ve Confusion Matrix gibi metriklerle değerlendirme yapıldı.  
@@ -42,12 +42,18 @@ scikit-learn
 
 01_Titanic/  
 ├── data/  
-│   ├── train.csv  
+│   └── train.csv  
 │  
 ├── notebook/  
 │   └── titanic.ipynb  
 ├── images/  
-│   └── grafik dosyaları (varsa)  
+│   ├── hayatta_kalma_orani_cinsiyet.png  
+│   ├── hayatta_kalma_orani_yas.png  
+│   ├── hayatta_kalma_orani_sinif.png  
+│   ├── hayatta_kalma_orani_aile.png  
+│   ├── hayatta_kalma_orani_unvan.png  
+│   ├── confusion_matrix.png  
+│   └── roc_egirisi.png  
 ├── README.md  
 ├── requirements.txt  
 └── .gitignore
